@@ -1,0 +1,165 @@
+//Описание ресурсов, созданное в Microsoft Visual C++.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Создано из ресурса TEXTINCLUDE 2.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#include "resdefce.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Значок
+//
+
+// Значок с наименьшим значением идентификатора помещается первым, чтобы гарантировать использование
+// идентичного значка приложения для всех систем.
+
+IDI_XMLRPCCLIENT       ICON         "xmlrpc-client.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Меню
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "В&ыход",                        IDM_FILE_EXIT
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "&О программе",                       IDM_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Сочетание клавиш
+//
+
+IDC_XMLRPCCLIENT ACCELERATORS
+BEGIN
+    "A",            IDM_HELP_ABOUT,         VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDOK,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Диалоговое окно
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 125, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CAPTIONOKBTN
+CAPTION "О проекте xmlrpc-client"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON         IDI_XMLRPCCLIENT,IDC_STATIC,11,17,20,20
+    LTEXT        "xmlrpc-client, версия 1.0",IDC_STATIC,38,10,70,8,SS_NOPREFIX
+    LTEXT        "(C) 2011",IDC_STATIC,38,25,70,8
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Диалоговое окно
+//
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+1 TEXTINCLUDE  
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#include ""resdefce.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""xmlrpcclient.rc2""  // ресурсы, не редактируемые в Microsoft Visual C++\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Таблица строк
+//
+
+STRINGTABLE  
+BEGIN
+   IDC_XMLRPCCLIENT   "XMLRPCCLIENT"
+   IDS_APP_TITLE    "xmlrpc-client"
+   IDS_TOOLS "Сервис"
+END
+
+#endif
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Создано из ресурса TEXTINCLUDE 3.
+//
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "xmlrpcclient.rc2"  // ресурсы, не редактируемые в Microsoft Visual C++
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // не APSTUDIO_INVOKED
